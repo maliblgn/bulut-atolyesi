@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142e30">
+  <meta name="description" content="Bulut bilişim dersini anla, örneklerle pekiştir ve açıklamalı sorularla sınava hazırlan.">
+  <title>Bulut Atölyesi · Ders çalışma alanın</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23142e30'/%3E%3Cpath d='M11 28a7 7 0 0 1-1-14 10 10 0 0 1 19-1 8 8 0 0 1-1 15Z' fill='%23b9e4b9'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script>window.PUBLIC_STUDY_SITE=true;</script>
+  <script defer src="content.js"></script>
+  <script defer src="course.js"></script>
+  <script defer src="past-exams.js"></script>
+  <script defer src="study-ui.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">İçeriğe geç</a>
+  <aside id="sidebar" class="sidebar" aria-label="Ana menü"></aside>
+  <div id="scrim" class="scrim" hidden></div>
+  <div class="workspace">
+    <header class="topbar">
+      <button id="menuBtn" class="icon-btn menu-btn" aria-label="Menüyü aç" aria-expanded="false">☰</button>
+      <div class="breadcrumb">ÇALIŞMA ALANIN <span>/</span> <b id="crumb">Genel bakış</b></div>
+      <div class="top-actions">
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Bir kavram ara…" aria-label="Konularda kavram ara"><kbd>/</kbd></label>
+        <button id="themeBtn" class="icon-btn" aria-label="Koyu temaya geç" title="Temayı değiştir">◐</button>
+        <span class="avatar" aria-label="Kişisel çalışma alanı">B</span>
+      </div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="footer"><span>Bulut Atölyesi <i>·</i> Anlayarak öğren, hatırlayarak pekiştir.</span><span>13 ders PDF’si · Vize ve final arşivi <i>·</i> İlerleme bu tarayıcıda saklanır.</span></footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="confirmDialog"><h2>İlerleme silinsin mi?</h2><p>Konu ilerlemen, soru geçmişin, kartların ve notların bu tarayıcıdan silinir.</p><div class="button-row"><button class="btn secondary" data-action="cancel-reset">Vazgeç</button><button class="btn danger" data-action="confirm-reset">İlerlemeyi sil</button></div></dialog>
+  <noscript>Bu çalışma sayfasındaki testleri ve konu anlatımlarını kullanmak için JavaScript’i etkinleştir.</noscript>
+</body>
+</html>
